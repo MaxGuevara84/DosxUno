@@ -1,0 +1,91 @@
+<div class="row gradient-bg" style="height: 230px;">
+    <div class="container">
+        <!-- <div class="row">
+            <div class="col align-self-end">
+                <img src="assets/img/custom/2x1_logo-1.png" width="10%">
+            </div>
+        </div> -->
+        
+        <div class="row justify-content-end">
+            <div class="col-4 align-self-center">
+                <h3>Bienvenido a 2x1!!!</h3>
+                <h3>Encontrá las mejores ofertas</h3>
+            </div>
+            <div class="col-4">
+                <div class="row"><img src="assets/img/custom/2x1_logo-1.png" style="width: 50%;"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+
+    <div id="homepage-6">
+
+
+        <!--=====================================
+    	Home Features
+    	======================================-->
+
+        <div class="ps-site-features">
+
+            <div class="container">
+
+                <div class="ps-block--site-features ps-block--site-features-2">
+
+                    <div class="ps-block__item">
+                        <div class="ps-block__left"><i class="icon-rocket"></i></div>
+                        <div class="ps-block__right">
+                            <h4>Ofertas Exclusivas</h4>
+                            <p>armá tu combo</p>
+                        </div>
+                    </div>
+
+                    <div class="ps-block__item">
+                        <div class="ps-block__left"><i class="icon-sync"></i></div>
+                        <div class="ps-block__right">
+                            <h4>Cupones </h4>
+                            <p>de descuento</p>
+                        </div>
+                    </div>
+
+                    <div class="ps-block__item">
+                        <div class="ps-block__left"><i class="icon-credit-card"></i></div>
+                        <div class="ps-block__right">
+                            <h4>Promos</h4>
+                            <p>24/7</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+        </div><!-- End Home Features-->
+
+        <div class="row row-cols-6 g-3 mb-5">
+            <div class="col" *ngFor="let item of iconsData" style="width: 150px;">
+                <div class="card hover-card">
+                    <div class="card-body">
+                        <div class="row justify-content-center" style="height: 100px;">
+                            <div class="col align-self-center">
+                                <img [src]="item.icon" width="30%"
+                                    style="margin-left: auto;margin-right: auto;display: block;">
+                                <br>
+                                <h5 style="text-align: center;color: red;">{{item.description}}</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <app-home-promotions></app-home-promotions>
+
+        <app-deal-hot></app-deal-hot>
+
+        <app-gray-section></app-gray-section>
+
+
+    </div>
+</div>

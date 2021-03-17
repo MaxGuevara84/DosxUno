@@ -1,0 +1,11 @@
+.hover-card{
+    border-radius: 10px;
+    border: 1px solid red;
+}
+.hover-card:hover{
+    /* background-color: #ff000060; */
+    transform: scale(1.05) !important;
+}
+.gradient-bg{
+    background: linear-gradient(0.25turn, #EB1C24, white);
+}
